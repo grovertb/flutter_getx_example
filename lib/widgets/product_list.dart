@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_example/controllers/globalController.dart';
+import 'package:flutter_example/controllers/global.dart';
 import 'package:get/get.dart';
 
 class ProductList extends StatelessWidget {

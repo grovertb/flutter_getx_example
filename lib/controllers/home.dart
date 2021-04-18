@@ -1,6 +1,6 @@
 import 'package:flutter_example/api/users.dart';
 import 'package:flutter_example/models/user.dart';
-import 'package:flutter_example/pages/profilePage.dart';
+import 'package:flutter_example/pages/profile.dart';
 import 'package:get/get.dart';
 
 class HomeController extends GetxController {

@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_example/controllers/home.dart';
-import 'package:flutter_example/controllers/profileController.dart';
+import 'package:flutter_example/controllers/profile.dart';
 import 'package:get/get.dart';
 
 class ProfilePage extends StatelessWidget {
