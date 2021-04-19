@@ -1,3 +1,6 @@
+import 'dart:async';
+
+import 'package:flutter_example/controllers/socket_client.dart';
 import 'package:flutter_example/models/pet.dart';
 import 'package:get/get.dart';
 
@@ -13,6 +16,23 @@ class ReactiveController extends GetxController {
   //   age: 1,
   // ).obs;
   Pet myPet = Pet(name: 'Lulu', age: 1);
+
+  StreamSubscription<String> _subscription;
+
+  @override
+  void onInit() {
+    super.onInit();
+    final socketController = Get.find<SocketClientController>();
+    _subscription = socketController.message.listen((String data) {
+      print("Data: $data");
+    });
+  }
+
+  @override
+  void onClose() {
+    _subscription?.cancel();
+    super.onClose();
+  }
 
   void increment() {
     counter.value++;
