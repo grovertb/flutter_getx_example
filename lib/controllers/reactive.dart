@@ -24,7 +24,7 @@ class ReactiveController extends GetxController {
     super.onInit();
     final socketController = Get.find<SocketClientController>();
     _subscription = socketController.message.listen((String data) {
-      print("Data: $data");
+      // print("Data: $data");
     });
   }
 
