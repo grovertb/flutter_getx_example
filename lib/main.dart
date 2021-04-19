@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_example/controllers/global.dart';
+import 'package:flutter_example/pages/reactive.dart';
 import 'package:flutter_example/pages/splash.dart';
 import 'package:get/get.dart';
 
@@ -27,7 +28,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       // home: MyHomePage(title: 'Flutter Demo Home Page'),
-      home: SplashPage(),
+      // home: SplashPage(),
+      home: ReactivePage(),
     );
   }
 }
